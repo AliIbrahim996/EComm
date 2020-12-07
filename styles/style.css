@@ -1,0 +1,64 @@
+/*Body*/
+.body{
+    font-size: 12px;
+    line-height: 1.48;
+    color: #23232323;
+    background: rgb(43, 43, 43);
+    overflow-x: hidden;
+}
+/*TOP*/
+#Top{
+    background-color: #3b3a3a9d;
+    padding: 10px 0px;
+    margin-bottom: 20px;
+}
+
+#Top .offer{
+    color: #ffffff;
+}
+#Top .offer a{
+    color:#FFFFFF;
+    padding-left: 5px;
+}
+
+#Top .offer .btn{
+    text-transform: uppercase;
+}
+@media(max-width: 991px){
+    #Top .offer{
+        margin-top: 10px;
+    }
+}
+@media(max-width:991px){
+   #Top{
+       font-size: 10px;
+       text-align: center;
+   } 
+   #Top a{
+       color:#FFFFFF;
+   }
+
+   #Top ul.menu{
+       padding-top: 4px;
+       margin:1px;
+       text-align: right;
+       font-size: 10px;
+       list-style: none;
+   }
+}
+@media(max-width:991px){
+    #Top ul.menu{
+        text-align: center;
+    }
+}
+#Top ul.menu > li{
+    display: inline-block;
+}
+#Top ul.menu > li a{
+    color: #f0f0f0;
+}
+#Top ul.menu > li + li:before{
+    content: "|\00a0";
+    color:#f7f7f7;
+    padding: 0 5px;
+}

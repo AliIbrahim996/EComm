@@ -1,0 +1,4 @@
+<ifModule mod_expires.c>
+EXPIREACTIVE on
+ExpireByType "text/css" "access plus 1 month"
+</ifModule>
