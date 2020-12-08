@@ -2,8 +2,8 @@
 .body{
     font-size: 12px;
     line-height: 1.48;
-    color: #23232323;
-    background: rgb(43, 43, 43);
+    color: #333333;
+    background:#f0f0f0;
     overflow-x: hidden;
 }
 /*TOP*/
@@ -62,3 +62,61 @@
     color:#f7f7f7;
     padding: 0 5px;
 }
+
+.navbar{
+    background: rgba(255, 255, 255, 0.733);
+
+}
+
+.navbar-collapse .right{
+    float:right;
+}
+ .navbar-brand{
+     float: left;
+     padding: 10px 15px;
+     font-size: 18px;
+     line-height: 20px;
+     height: 75px;;
+ }
+
+ .navbar-brand:hover,
+ .navbar-brand:focus{
+     text-decoration: none;   
+ }
+
+ .navbar ul.nav > li > a{
+     text-transform: uppercase;
+     font-weight: bold;
+     font-size: 14px;
+ }
+ .navbar ul.nav > li > a:hover{
+    color:#ffffff;
+    background-color: #e7e7e7;
+ }
+ .padding-nav{
+     padding-top: 10px;
+ }
+
+ .btn-primary{
+     color: rgb(255,255,255);
+     background: rgb(79,191,168);
+     background-color: rgb(65,179,165);
+ }
+
+ #search .navbar-form{
+     float:right;
+ }
+
+ #search {
+     clear: both;
+     border-top: solid 1px #9adacd;
+     text-align: right;
+ }
+
+ #search .navbar-form .input-group{
+     display: table;
+ }
+ #search .navbar-form .input-group .form-control{
+    width:100%;
+}
+

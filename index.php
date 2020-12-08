@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta mainfest="mainfest.appcache">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Project</title>
@@ -28,6 +29,7 @@
             </div>
         </div>
     </div>
+
     <div id="navbar" class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
@@ -43,6 +45,7 @@
                     <i class="fa fa-search"></i>
                 </button>
             </div>
+
             <div class="navbar-collapse collapse" id="navigation">
                 <div class="padding-nav">
                     <ul class="nav navbar-nav left">
@@ -53,31 +56,68 @@
                         <li><a href="contact.php">Contact us</a></li>
                     </ul>
                 </div>
-                <a href="cart.php" class="btn btn-primary navbar-btn right">
-                    <i class="fa fa-shopping-cart"></i>
-                    <span>4 Items in your cart</span>
-                </a>
-                <div class="navbar-collapse collapse right">
+                    <a href="cart.php" class="btn btn-primary navbar-btn right">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>4 Items in your cart</span>
+                    </a>
+                    <div class="navbar-collapse collapse right">
                     <button class="bt btn-primary navbar-btn" data-toggle="collapse" data-target="#search">
                         <span class="sr-only">Toggle Search</span>
                         <i class="fa fa-search"></i>
                     </button>
-                 </div>
-                     
-                </div>
+               </div>
             </div>
-            
-                <div class="collapse clearfix" id="search">
-                    <form method="get" action="results.php" class="navbar-form">
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="user_query" placeholder="search" required>
-                        </div>
-                    </form>
+           
+               <div class="collapse clearfix" id="search">
+                             <form method="get" action="results.php" class="navbar-form">
+                                 <div class="input-group">
+                                   <input type="text" class="form-control" name="user_query" placeholder="search" required>
+                                   <span class="input-group-btn">
+                                     <button type="submit" name="search" value="search" class="btn btn-primary">
+                                         <i class="fa fa-search"></i>
+                                     </button>
+                                   </span>
+                                  
+                                 </div>
+                            </form>
                 </div>
-            </div>
-            
         </div>
+    </div>
 
+    <div class="container" id="slider">
+        <div class="col-md-12">
+            <div class="carousel slide" id="myCarousel" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li class="active" data-target="#myCarousel" data-slide-to="0"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="admin_area/slides_images/slide1.jpg" alt="slider image 1">
+                    </div>
+                    <div class="item">
+                        <img src="admin_area/slides_images/slide2.jpg" alt="slider image 2">
+                    </div>
+                    <div class="item">
+                        <img src="admin_area/slides_images/slide3.jpg" alt="slider image 3">
+                    </div>
+                    <div class="item">
+                        <img src="admin_area/slides_images/slide4.jpg" alt="slider image 4">
+                    </div>
+                </div>
+                 <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                     <span class="glyphicon glyphicon-chevron-left"></span>
+                     <span class="sr-only">Previous</span>
+                 </a>
+                 <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                     <span class="glyphicon glyphicon-chevron-right"></span>
+                     <span class="sr-only">Next</span>
+                 </a>
+            </div>
+        </div>
     </div>
 
     <script src="js/jquery-3.5.1.min.js"></script>

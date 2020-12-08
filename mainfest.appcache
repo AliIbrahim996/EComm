@@ -1,7 +1,10 @@
 CACHE MAINFEST
 
 CACHE:
-
+styles/
+js/
+images/
+/index.php
 NETWORK:
 
 FALLBACK:
