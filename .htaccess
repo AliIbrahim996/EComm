@@ -29,7 +29,7 @@
   Header append Vary User-Agent
 </ifmodule>
 
-<IfModule mod_expires.c>
+<Ifmodule mod_expires.c>
 EXPIREACTIVE on
 ExpireByType "text/css" "access plus 1 month"
 ExpireByType "text/js" "access plus 1 month"
@@ -40,9 +40,9 @@ ExpireByType "image/png" "access plus 1 month"
 ExpireByType "image/gif" "access plus 1 month"
 ExpireByType "image/x-ico" "access plus 1 month"
 ExpireByType "image/ico" "access plus 1 month"
-</IfModule>
-<IfModule mod_headers.c>
+</Ifmodule>
+<Ifmodule mod_headers.c>
 <FilesMatch "\. (css|js|jpg|png|gif|php|x-ico|co)$">
 Header set Cache-control "max-age=2592000, store, public, must-revalidate"
 </FilesMatch>
-</IfModule>
+</Ifmodule>
